@@ -2,7 +2,12 @@
     "files.associations": {
         "iostream": "cpp",
         "xstring": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "utility": "cpp",
+        "iterator": "cpp",
+        "memory": "cpp",
+        "xmemory": "cpp",
+        "xutility": "cpp"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }

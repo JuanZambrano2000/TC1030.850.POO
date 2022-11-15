@@ -14,3 +14,16 @@ class Video{
         int anioLanzamiento;
         int duracion;
 };
+class Pelicula:public Video{
+    public: 
+    Pelicula();
+        
+};
+class Serie:public Video{
+    public:
+};
+/*
+class Perro:public Animal{
+    public:
+        Perro(int _edad): Animal(_edad){};//Hacemos referencia al constructor de la clase padre
+};*/
