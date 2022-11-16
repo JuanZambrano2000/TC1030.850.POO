@@ -6,7 +6,7 @@ class Video{
         Video(string _tipoVideo, string _nombreVideo, string _genero, int _calificacion, int _anioLanzamiento, int _duracion);
         void calificaVideo(int _calificacion);
         void muestraDatos();
-    private:
+    protected:
         string tipoVideo;
         string nombreVideo;
         string genero;
@@ -16,14 +16,13 @@ class Video{
 };
 class Pelicula:public Video{
     public: 
-    Pelicula();
+        Pelicula(string _tipoVideo, string _nombreVideo, string _genero, int _anioLanzamiento, int _duracion); 
+        Pelicula(string _tipoVideo, string _nombreVideo, string _genero, int _calificacion, int _anioLanzamiento, int _duracion);
         
 };
 class Serie:public Video{
     public:
+        Serie(string _tipoVideo, string _nombreVideo, string _genero, int _anioLanzamiento, int _duracion); 
+        Serie(string _tipoVideo, string _nombreVideo, string _genero, int _calificacion, int _anioLanzamiento, int _duracion);
+        
 };
-/*
-class Perro:public Animal{
-    public:
-        Perro(int _edad): Animal(_edad){};//Hacemos referencia al constructor de la clase padre
-};*/
