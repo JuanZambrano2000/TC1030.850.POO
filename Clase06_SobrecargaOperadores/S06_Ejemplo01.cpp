@@ -2,9 +2,15 @@
 using namespace std;
 class Puntos{
     public:
+        Puntos(int _x, int _y, int _z){
+            x = _x;
+            y = _y;
+            z = _z;
+        };
         Puntos(int _x, int _y){
             x = _x;
             y = _y;
+            z = 0;
         };
         //Sobrecarga del operador +
         Puntos operator + (Puntos pts){
@@ -14,7 +20,7 @@ class Puntos{
             return new_puntos;
         };
     //private:
-        int x,y;
+        int x,y,z;
 };
 int main(){
     Puntos punto1(10,20); //x=10, y=20  
